@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: bisque;
+    }
+    header{
+        background-color: rgb(128, 143, 129);
+        padding: 1rem;
+        box-shadow: 0 2px 5px black;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    .logo-circle{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(188, 163, 73);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    nav ul{
+        list-style-type: none;
+        display: flex;
+    }
+    nav ul li{
+        margin-left: 20px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: rgb(14, 15, 14);
+        font-family: 'Times New Roman', Times, serif;
+    }
+    nav ul li :hover{
+        color: rgb(15, 14, 14);
+        background-color: rgb(40, 105, 118);
+    }
+    main{
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+    .about-section{
+        display:flexbox;
+        align-items: center;
+        background-color:black;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px black;
+        justify-content: center;
+    }
+    .about-image{
+        flex: 1;
+        margin-right: 2rem;
+    }
+    .about-image img {
+        max-width: 80%;
+        border-radius: 40%;
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+    }
+    .about-content{
+        flex: 2;
+        margin-bottom: 1000px;
+        margin-top: -400px;
+        margin-left: 400px;
+
+    }
+    h2{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    h1{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    p{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .buttons{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .button{
+        padding: 0.5rem 1rem;
+        border: 1px solid black;
+        border-radius: 10px;
+        text-decoration: none;
+        color: grey;
+        transition: background-color 0.3s;
+    }
+    .button:hover{
+        background-color: rgb(35, 85, 87);
+        color: black;
+    }
+</style>
+<body>
+   <header>
+    <nav>
+        <div class="logo">
+             <div class="logo-circle">ER</div>
+             <div>
+                <strong>Pavan Khute</strong>
+                <div>AI Engineer</div>
+             </div>
+        </div>
+        <ul>
+            <li><a href="about">About</a></li>
+            <li><a href="skill">Skill</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="hepl">Help</a></li>
+        </ul>
+    </nav>
+   </header> 
+   <main>
+    <section class="about-secton">
+        <div class="about-image">
+            <img src="Pavan_photo.jpg" alt="Pavan Photo" width="300px">
+        </div>
+        <div class="about-content">
+            <h2>Hello,</h2>
+            <h1>I'M <i>Pavan</i>,<br>an AI <i>Engineer</i>.</h1>
+            <p>Pursuing Engineering Degree From SPPU University. Currently studing in class of 3<sup>rd</sup> year with the fullfilment of skills like <i><b>Web Development,Cloud</b></i>.</p> 
+             <div class="buttons">
+                  <a href="about" class="button">About</a>
+                  <a href="skill" class="button">Skill</a>
+                  <a href="contact" class="button">Contact</a>
+                  <a href="help" class="button">Help</a>
+             </div>
+        </div>
+    </section>
+   </main>
+</body>
+</html>
